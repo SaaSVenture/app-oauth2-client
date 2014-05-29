@@ -1,10 +1,12 @@
 {
-  "client_id": "demoapp",
-  "client_secret": "demopass",
-  "token_route": "grant",
-  "authorize_route": "authorize",
-  "resource_route": "access",
-  "resource_params": {},
-  "user_credentials": ["demouser", "testpass"],
+  "client_id": "s0m3cl13nt",
+  "client_secret": "sup3rs3cr3t",
+  "token_route": "http://surroundsme.dev/oauth/token",
+  "authorize_route": "http://surroundsme.dev/oauth/authorize",
+  "resource_route": "http://surroundsme.dev/api/assignments",
+  "resource_method": "POST",
+  "resource_params": { "brand": "surroundsme" },
+  "curl_options": { "http_port": 443, "verifyssl": false },
+  "user_credentials": ["rob", "asdfasdf"],
   "http_options": { "exceptions": false }
 }
